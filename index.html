@@ -1,4 +1,58 @@
 <!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rakuten Slider</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f5f5f5;
+}
+
+.swiper{
+width:1200px;
+max-width:95%;
+margin:20px auto;
+border-radius:20px;
+overflow:hidden;
+}
+
+.swiper img{
+width:100%;
+display:block;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+color:#fff;
+}
+
+.swiper-pagination-bullet{
+background:#fff;
+opacity:0.7;
+}
+
+.swiper-pagination-bullet-active{
+opacity:1;
+width:20px;
+border-radius:999px;
+}
+
+@media screen and (max-width:768px){
+
 .swiper{
 width:95%;
 border-radius:16px;
@@ -12,26 +66,21 @@ display:none;
 }
 
 </style>
+
 </head>
 
 <body>
-
-<div class="top-slider">
 
 <div class="swiper mySwiper">
 
 <div class="swiper-wrapper">
 
 <div class="swiper-slide">
-<a href="#">
 <img src="https://image.rakuten.co.jp/pruvansay/cabinet/13030354/2043-bener.jpg">
-</a>
 </div>
 
 <div class="swiper-slide">
-<a href="#">
 <img src="https://image.rakuten.co.jp/pruvansay/cabinet/13110500/imgrc0114484131.jpg">
-</a>
 </div>
 
 </div>
@@ -39,8 +88,6 @@ display:none;
 <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>
 <div class="swiper-pagination"></div>
-
-</div>
 
 </div>
 
