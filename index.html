@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+.swiper{
+width:95%;
+border-radius:16px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top-slider">
+
+<div class="swiper mySwiper">
+
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<a href="#">
+<img src="https://image.rakuten.co.jp/pruvansay/cabinet/13030354/2043-bener.jpg">
+</a>
+</div>
+
+<div class="swiper-slide">
+<a href="#">
+<img src="https://image.rakuten.co.jp/pruvansay/cabinet/13110500/imgrc0114484131.jpg">
+</a>
+</div>
+
+</div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".mySwiper", {
+
+loop:true,
+
+autoplay:{
+delay:3000,
+disableOnInteraction:false,
+},
+
+pagination:{
+el:".swiper-pagination",
+clickable:true,
+},
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
+});
+
+</script>
+
+</body>
+</html>
